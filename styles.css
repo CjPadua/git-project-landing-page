@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+}
+
+.width-limiter-container {
+  display: flex;
+  flex-grow: 1;
+  max-width: 60%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.hero-logo {
+  font-size: 24px;
+  color: #f9faf8;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
