@@ -16,6 +16,7 @@
 .width-limiter-container {
   max-width: 60%;
   display: flex;
+  flex-grow: 1;
 }
 
 .header {
@@ -24,7 +25,6 @@
 }
 
 .width-limiter-container.header {
-  flex-grow: 1;
   justify-content: space-between;
   align-items: center;
   padding: 2em 0;
@@ -46,7 +46,7 @@ a {
   color: #e5e7eb;
 }
 
-.hero-section {
+.section {
   display: flex;
   justify-content: center;
   height: 80vh;
@@ -54,8 +54,6 @@ a {
 
 .width-limiter-container.hero {
   display: flex;
-  flex-grow: 1;
-
 }
 
 .hero-text {
@@ -101,4 +99,40 @@ button {
   font-weight: bold;
   border: none;
   border-radius: 0.5em;
+}
+
+.width-limiter-container.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6em;
+  gap: 6em;
+}
+
+.images-header {
+  font-size: 3em;
+  color: #1f2937;
+  font-weight: 900;
+}
+
+.images {
+  display: flex;
+  gap: 4em;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: min-content;
+  gap: 0.5em;
+  color: gray;
+  font-size: 1.25em;
+}
+
+.image-container .image {
+  width: 11em;
+  flex: 1 0 11em;
+  border: 5px  solid #3882f6;
+  border-radius: 1em;
 }
